@@ -19,8 +19,20 @@ jobs:
           name: Saying Bye
           command: echo "Bye"
 
+  go_home:
+    maching:
+      image: ubuntu-2004:202010-01
+
+    steps:
+      - run:
+          name: Going home
+          command: echo "going home"
+
 workflows:
   hello_and_bye:
     jobs:
       - say_hello
       - say_bye
+  another_work_flow:
+    jobs:
+      - go_home
