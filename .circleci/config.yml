@@ -7,8 +7,8 @@ jobs:
 
     steps:
       - run: 
-        name: Saying Hello 
-        command: echo "Hello world"
+          name: Saying Hello 
+          command: echo "Hello world"
 
   say_bye:
     machine:
@@ -16,8 +16,8 @@ jobs:
 
     steps:
       - run: 
-        name: Saying Bye
-        command: echo "Bye"
+          name: Saying Bye
+          command: echo "Bye"
 
 workflows:
   hello_and_bye:
