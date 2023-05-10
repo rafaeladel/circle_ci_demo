@@ -36,6 +36,3 @@ workflows:
     jobs:
       - say_hello
       - say_bye
-  another_work_flow:
-    jobs:
-      - go_home
