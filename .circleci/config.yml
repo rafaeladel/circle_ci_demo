@@ -6,14 +6,18 @@ jobs:
       image: ubuntu-2004:202010-01
 
     steps:
-      - run: echo "Hello world"
+      - run: 
+        name: Saying Hello 
+        command: echo "Hello world"
 
   say_bye:
     machine:
       image: ubuntu-2004:202010-01
 
     steps:
-      - run: echo "Bye"
+      - run: 
+        name: Saying Bye
+        command: echo "Bye"
 
 workflows:
   hello_and_bye:
