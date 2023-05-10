@@ -1,0 +1,13 @@
+<h1>Article</h1>
+
+<h4><%= @article.title %></h4>
+
+<p><%= @article.body %></p>
+
+<p>You have <%= @article.comments.count %> comment(s)</p>
+<%= render 'comments/form', article: @article %>
+    
+<%= render @article.comments %>
+
+<div><%= link_to @article.archived? ? "unarchive" : "archive", article_archive_path(@article), data: { turbo_method: :post, turbo_confirm: "Are you sure?" } %></div>
+<div><%= link_to "all", articles_path%></div>
