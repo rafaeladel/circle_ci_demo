@@ -1,9 +1,16 @@
 version: 2.1
 
 jobs:
-  build:
+  say_hello:
     machine:
       image: ubuntu-2004:202010-01
 
     steps:
       - run: echo "Hello world"
+
+  say_bye:
+    machine:
+      image: ubuntu-2004:202010-01
+
+    steps:
+      - run: echo "Bye"
