@@ -22,15 +22,6 @@ jobs:
           name: Saying Bye
           command: echo "Bye"
 
-  go_home:
-    maching:
-      <<: *machine
-
-    steps:
-      - run:
-          name: Going home
-          command: echo "going home"
-
 workflows:
   hello_and_bye:
     jobs:
