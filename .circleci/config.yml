@@ -14,3 +14,9 @@ jobs:
 
     steps:
       - run: echo "Bye"
+
+workflows:
+  hello_and_bye:
+    jobs:
+      - say_hello
+      - say_bye
